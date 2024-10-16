@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 10;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    background-image: linear-gradient(to right, #c7f458ff, #d56324ff, #3a2656ff, #3a7233ff);
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 0px;
+}
+
+.agent-selection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 30%;
+    height: 100%;
+    padding: 48px 35px;
+    border-right: 1px solid black;
+    z-index: 2;
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    transition-duration: .2s;
+}
+
+.icon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.icon.selected {
+    border: 5px solid black;
+    transform: scale(1.2);
+}
+
+.icon:not(.selected) {
+    border: 3px solid white;
+}
+
+.icon:not(.selected):hover {
+    transform: scale(1.08);
+}
+
+.agent {
+    width: 35%;
+    height: 100%;
+    background: transparent url('https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/background.png') no-repeat center center;
+    position: relative;
+    overflow: hidden;
+}
+
+.agent img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.agent-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 0px 40px 20px;
+    width: 30%;
+    height: 100%;
+}
+
+.abilities {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+.ability:not(.active) {
+    background-color: #a6a6a650;
+}
+
+.ability {
+    width: 80px;
+    height: 90px;
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.ability span {
+    display: inline-block;
+    width: 100%;
+}
+
+.ability img {
+    width: 100%;
+    height: 52px;
+    object-fit: contain;
+    margin-top: 5px;
+}
+
+.active {
+    background-color: #ffffff70;
+}
+
+.tab-content {
+    width: 100%;
+    text-align: left;
+    gap: 10px;
+}

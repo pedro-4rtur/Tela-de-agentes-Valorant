@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de agentes</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <main>
+        <section class="agent-selection"></section>
+        <section class="agent"><img src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/fullportrait.png" alt="Arte Gekko"></section>
+        <section class="agent-info">
+            <h2>Iniciador</h2>
+            <h1>Gekko</h1>
+            <div class="abilities">
+                <div class="ability active" onclick="changeTab(this)">
+                    <span>INFO</span>
+                    <hr>
+                    <img src="https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png" alt="Ícone role">
+                </div>
+                <div class="ability" onclick="changeTab(this)">
+                    <span>C</span>
+                    <hr>
+                    <img src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/grenade/displayicon.png" alt="Ícone habilidade 1">
+                </div>
+                <div class="ability" onclick="changeTab(this)">
+                    <span>Q</span>
+                    <hr>
+                    <img src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ability1/displayicon.png" alt="Ícone habilidade 2">
+                </div>
+                <div class="ability" onclick="changeTab(this)">
+                    <span>E</span>
+                    <hr>
+                    <img src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ability2/displayicon.png" alt="Ícone habilidade 3">
+                </div>
+                <div class="ability" onclick="changeTab(this)">
+                    <span>X</span>
+                    <hr>
+                    <img src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ultimate/displayicon.png" alt="Ícone ultimate">
+                </div>
+            </div>
+            <div class="tab-content">
+                <p>Gekko, de Los Angeles, lidera um grupo muito unido de criaturas caóticas. Seus amigos atropelam tudo, tirando os inimigos do caminho. Depois, Gekko corre atrás deles para reagrupá-los e reiniciar o processo.</p>
+                <h3>Iniciador</h3>
+                <p>Iniciadores desafiam situações arriscadas, preparando a equipe para entrar em terreno contestado e rechaçar defensores.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

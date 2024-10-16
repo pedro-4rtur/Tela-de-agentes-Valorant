@@ -13,7 +13,7 @@ function Agente(nome, agentInfo, agentIcon, portrait, background, backgroundColo
 }
 
 let agentes = []
-let agentSelected = agentes[0]
+let agentSelected
 
 async function getAgents() {
     let url = "https://valorant-api.com/v1/agents?language=pt-BR&isPlayableCharacter=True"
@@ -66,6 +66,8 @@ async function getAgents() {
 
         agentes.push(agente)
     });
+
+    agentSelected = agentes[0]
 
     setView()
 }
@@ -136,6 +138,8 @@ function changeTab(e) {
     tabs.forEach(element => {
         element.classList.remove("active")
     })
+
+    console.log(e)
 
     e.className += " active"
 

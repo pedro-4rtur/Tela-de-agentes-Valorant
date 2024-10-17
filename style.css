@@ -17,6 +17,7 @@ body {
 main {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 10;
     height: 100%;
     width: 100%;
@@ -46,7 +47,7 @@ h3 {
     padding: 15px 0px;
 }
 
-.agent-selection {
+#agent-selection {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -72,8 +73,8 @@ h3 {
 }
 
 .icon.selected {
-    border: 5px solid black;
-    transform: scale(1.2);
+    outline: 3px solid black;
+    transform: scale(1.1);
 }
 
 .icon:not(.selected) {
@@ -84,21 +85,24 @@ h3 {
     transform: scale(1.08);
 }
 
-.agent {
+#agent {
     width: 35%;
     height: 100%;
-    background: transparent url('https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/background.png') no-repeat center center;
+    background: url('https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/background.png') no-repeat center center;
     position: relative;
     overflow: hidden;
+    transition-duration: 1.5s;
 }
 
-.agent img {
+#agent div {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    background: url('https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/fullportrait.png') no-repeat center center;
+    background-size: 130%;
+    transition-duration: 1.5s;
 }
 
-.agent-info {
+#agent-info {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -139,6 +143,7 @@ h3 {
 
 .active {
     background-color: #ffffff70;
+    transform: scale(1.1);
 }
 
 .tab-content {

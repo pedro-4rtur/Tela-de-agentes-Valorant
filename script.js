@@ -75,7 +75,7 @@ async function getAgents() {
 window.onload = getAgents()
 
 function setView() {
-    let agentSelection = document.querySelector(".agent-selection")
+    let agentSelection = document.querySelector("#agent-selection")
 
     let i = 0
     agentes.forEach(element => {
@@ -102,7 +102,7 @@ function setView() {
 
 function changeView() {
     agentSelected = (this == undefined) ? agentes[0] : agentes[this.dataset["id"]]
-    let agentImg = document.querySelector(".agent")
+    let agentImg = document.querySelector("#agent")
 
     document.querySelectorAll(".icon").forEach(e => {
         e.classList.remove("selected")
@@ -116,11 +116,10 @@ function changeView() {
 
     agentImg.style = `background-image: url('${agentSelected["background"]}')`
 
-    agentImg.firstChild.src = agentSelected["portrait"]
-    agentImg.firstChild.alt = `Arte ${agentSelected["name"]}`
+    agentImg.firstChild.style = `background-image: url('${agentSelected["portrait"]}');`
 
-    let nome = document.querySelector(".agent-info h1")
-    let role = document.querySelector(".agent-info h2")
+    let nome = document.querySelector("#agent-info h1")
+    let role = document.querySelector("#agent-info h2")
     let abilityIcon = document.querySelectorAll(".ability img")
 
     nome.innerHTML = agentSelected["name"]

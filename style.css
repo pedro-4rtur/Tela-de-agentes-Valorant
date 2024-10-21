@@ -47,6 +47,16 @@ h3 {
     padding: 15px 0px;
 }
 
+#openbtn {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    cursor: pointer;
+    font-size: 40px;
+    margin-right: 5%;
+}
+
 #agent-selection {
     display: flex;
     flex-direction: row;
@@ -54,7 +64,7 @@ h3 {
     gap: 16px;
     width: 30%;
     height: 100%;
-    padding: 48px 35px;
+    padding: 48px;
     border-right: 1px solid black;
     z-index: 2;
 }

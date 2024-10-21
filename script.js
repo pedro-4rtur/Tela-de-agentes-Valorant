@@ -175,3 +175,7 @@ function changeTab(e) {
         break;
     }
 }
+
+function toggleNavbar() {
+    document.querySelector(".sidenav").style = "display: block !important;"
+}

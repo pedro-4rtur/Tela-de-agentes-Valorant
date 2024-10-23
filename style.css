@@ -63,10 +63,10 @@ h3 {
     flex-wrap: wrap;
     gap: 16px;
     width: 30%;
+    max-width: 404px;
     height: 100%;
     padding: 48px;
     border-right: 1px solid black;
-    z-index: 2;
 }
 
 .icon {
@@ -97,6 +97,7 @@ h3 {
 
 #agent {
     width: 35%;
+    max-width: 472px;
     height: 100%;
     background: url('https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/background.png') no-repeat center center;
     position: relative;
@@ -118,6 +119,7 @@ h3 {
     gap: 20px;
     padding: 40px 0px 40px 20px;
     width: 30%;
+    max-width: 404px;
     height: 100%;
 }
 

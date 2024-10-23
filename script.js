@@ -130,6 +130,7 @@ function changeView() {
     }
 
     changeTab(document.querySelector(".ability"))
+    toggleNavbar()
 }
 
 function changeTab(e) {
@@ -177,5 +178,18 @@ function changeTab(e) {
 }
 
 function toggleNavbar() {
-    document.querySelector(".sidenav").style = "display: block !important;"
+    let toggle = document.querySelector("#openbtn")
+    let state = toggle.innerHTML
+
+    toggle.innerHTML = state == "menu" ? "close" : "menu"
+
+    if(state == "menu") {
+        state = "close"
+        toggle.innerHTML = state
+        document.querySelector("#agent-selection").style = "display: flex;"
+    } else {
+        state = "menu"
+        toggle.innerHTML = state
+        document.querySelector("#agent-selection").style = "display: none;"
+    }
 }

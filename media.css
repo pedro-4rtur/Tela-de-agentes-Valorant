@@ -6,24 +6,22 @@ h1, h2, h3, p, span {
 
 #openbtn {
     display: block;
-}
-
-#closebtn {
-    display: none;
+    z-index: 10;
 }
 
 #agent-selection {
-    height: 100%; /* 100% Full-height */
-    width: 50%; /* 0 width - change this with JavaScript */
-    position: absolute; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
     right: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding: 65px 65px 65px 28px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: #111;
+    overflow-x: hidden;
+    padding: 65px 65px 65px 28px;
+    transition: 0.5s;
     background-color: #b1b1b1;
+    display: none;
 }
 
 #agent, #agent-info {

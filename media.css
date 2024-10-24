@@ -4,6 +4,10 @@ h1, h2, h3, p, span {
     font-size: 12px;
 }
 
+main {
+    align-items: start;
+}
+
 #openbtn {
     display: block;
     z-index: 10;
@@ -26,9 +30,22 @@ h1, h2, h3, p, span {
 
 #agent, #agent-info {
     flex: 1;
+    height: 80%;
 }
 
 .icon {
     width: 30px;
     height: 30px;
+}
+
+#agent-info {
+    align-items: start;
+}
+
+.abilities {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    left: 0px;
+    justify-content: center;
 }

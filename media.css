@@ -34,12 +34,12 @@ main {
 }
 
 .icon {
-    width: 30px;
-    height: 30px;
+    width: 35px;
 }
 
 #agent-info {
-    align-items: start;
+    justify-content: start;
+    padding-top: 100px;
 }
 
 .abilities {
@@ -48,4 +48,8 @@ main {
     bottom: 20px;
     left: 0px;
     justify-content: center;
+}
+
+.ability {
+    width: 15%;
 }

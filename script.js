@@ -14,8 +14,6 @@ function Agente(nome, agentInfo, agentIcon, portrait, background, backgroundColo
 
 let agentes = []
 let agentSelected
-let windowSize = window.innerWidth
-console.log(windowSize)
 
 async function getAgents() {
     let url = "https://valorant-api.com/v1/agents?language=pt-BR&isPlayableCharacter=True"
@@ -132,7 +130,6 @@ function changeView() {
     }
 
     changeTab(document.querySelector(".ability"))
-    if(windowSize <= 768) toggleNavbar()
 }
 
 function changeTab(e) {
@@ -174,22 +171,5 @@ function changeTab(e) {
         p[0].innerHTML = agentSelected["agentInfo"]
         p[1].innerHTML = agentSelected["roleInfo"]
         break;
-    }
-}
-
-function toggleNavbar() {
-    let toggle = document.querySelector("#openbtn")
-    let state = toggle.innerHTML
-
-    toggle.innerHTML = state == "menu" ? "close" : "menu"
-
-    if(state == "menu") {
-        state = "close"
-        toggle.innerHTML = state
-        document.querySelector("#agent-selection").style = "display: flex;"
-    } else {
-        state = "menu"
-        toggle.innerHTML = state
-        document.querySelector("#agent-selection").style = "display: none;"
     }
 }
